@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "2ef5a54f-5399-418b-91d7-8b26f0367150",
+		"name": "task management api assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36713039"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/auth/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Siddharth Ojha\",\r\n    \"email\": \"sidojha195@gmail.com\",\r\n    \"password\": \"task@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/auth/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nilesh Gupta\",\r\n    \"email\": \"nilesh162@gmail.com\",\r\n    \"password\": \"task@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"sidojha195@gmail.com\",\r\n    \"password\": \"task@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzQ1MjMsImV4cCI6MTc0ODAzODEyM30.d_tn8iFwl-vgpGYI1Y0iZwPd7r2cWPjeTjkf0vUs1pk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/users/6830e42241f873e3bd78ae18",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzQ1MjMsImV4cCI6MTc0ODAzODEyM30.d_tn8iFwl-vgpGYI1Y0iZwPd7r2cWPjeTjkf0vUs1pk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/6830e42241f873e3bd78ae18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"6830e42241f873e3bd78ae18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/tasks/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzQ1MjMsImV4cCI6MTc0ODAzODEyM30.d_tn8iFwl-vgpGYI1Y0iZwPd7r2cWPjeTjkf0vUs1pk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Fix login bug\",\r\n  \"description\": \"Resolve the login issue for returning users on the frontend\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\",\r\n  \"status\": \"Started\",\r\n  \"assignedUserId\": \"6830e42241f873e3bd78ae18\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/tasks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/tasks/6830e785779c710cdf3bade3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzQ1MjMsImV4cCI6MTc0ODAzODEyM30.d_tn8iFwl-vgpGYI1Y0iZwPd7r2cWPjeTjkf0vUs1pk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tasks/6830e785779c710cdf3bade3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tasks",
+						"6830e785779c710cdf3bade3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/tasks/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzQ1MjMsImV4cCI6MTc0ODAzODEyM30.d_tn8iFwl-vgpGYI1Y0iZwPd7r2cWPjeTjkf0vUs1pk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tasks/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/tasks/6830e835779c710cdf3bade9",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzYwMjUsImV4cCI6MTc0ODAzOTYyNX0.YrdHsiq-9rxpznTPzwi-rkbqwE4FJ7SwcoApfCwuGGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Fix login bug\",\r\n  \"description\": \"Resolve the login issue for returning users on the frontend\",\r\n  \"dueDate\": \"2025-06-05T17:00:00.000Z\",\r\n  \"status\": \"Completed\",\r\n  \"assignedUserId\": \"6830e42241f873e3bd78ae18\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/tasks/6830e835779c710cdf3bade9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tasks",
+						"6830e835779c710cdf3bade9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/tasks/6830e835779c710cdf3bade9",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODMwZTI5NWNiNTUyYTE3MDliMzAwMjIiLCJpYXQiOjE3NDgwMzYwMjUsImV4cCI6MTc0ODAzOTYyNX0.YrdHsiq-9rxpznTPzwi-rkbqwE4FJ7SwcoApfCwuGGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tasks/6830e835779c710cdf3bade9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tasks",
+						"6830e835779c710cdf3bade9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
